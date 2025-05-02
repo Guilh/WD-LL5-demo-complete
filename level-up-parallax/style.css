@@ -1,0 +1,53 @@
+/* 🌐 Parallax Completed CSS – Level Up Activity */
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 🧠 Basic content styling for non-parallax sections */
+.content {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* 🧠 Step 1: Create the parallax effect by combining these three properties */
+.parallax {
+  background-attachment: fixed; /* Background stays fixed while scrolling */
+  background-size: cover;       /* Cover full section */
+  background-position: center;  /* Center the background image */
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* 🧠 Step 2: Add background images for each parallax section */
+.hero {
+  background-image: url('assets/image1.jpg');
+}
+
+.quiet {
+  background-image: url('assets/image2.jpg');
+}
+
+.home {
+  background-image: url('assets/image3.jpg');
+}
+
+/* ✨ Optional Styling: Text overlay styles to improve readability */
+.parallax h1,
+.parallax h2 {
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay effect */
+  padding: 16px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
